@@ -1,0 +1,44 @@
+1)
+def salam():
+    print("Salam dunya!")
+2)
+def kub_hesabla(n):
+    return n ** 3
+3)
+def birlesdir(soz1, soz2):
+    return soz1 + " " + soz2
+4)
+def cap_et(siyahi):
+    for siyahi element:
+        print(element)
+5)
+def toplam(*args):
+    return sum(args)
+6)
+def ortalama(*args):
+    if not args:
+        return "Reqem yoxdur"
+    return sum(args) / len(args)
+7)
+def adlar_reqemler(**kwargs):
+    for ad, reqem in kwargs.items():
+        print(f"ad: {ad}, reqem: {reqem}")
+8)def tip_yoxla(deyer):
+    if isinstance(deyer, str):
+        print("metn")
+    elif isinstance(deyer, (int, float)):
+        print("reqem")
+    else:
+        print("basqa")
+9)
+def yas_kateqoriya():
+    yas = int(input("Yasinizi daxil edin: "))
+    if yas < 18:
+        print("Genc")
+    else:
+        print("Yetkin")
+10)
+def soz_uzunluq():
+    soz = input("Bir soz daxil edin: ")
+    print(f"Soz uzunlugu: {len(soz)}")
+
