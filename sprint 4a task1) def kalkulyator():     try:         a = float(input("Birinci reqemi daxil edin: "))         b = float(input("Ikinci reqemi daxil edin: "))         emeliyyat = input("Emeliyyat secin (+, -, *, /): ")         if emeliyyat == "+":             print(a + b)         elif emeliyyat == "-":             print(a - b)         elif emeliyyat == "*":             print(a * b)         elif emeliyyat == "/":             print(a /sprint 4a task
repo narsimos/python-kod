@@ -1,0 +1,60 @@
+1)
+def kalkulyator():
+    try:
+        a = float(input("Birinci reqemi daxil edin: "))
+        b = float(input("Ikinci reqemi daxil edin: "))
+        emeliyyat = input("Emeliyyat secin (+, -, *, /): ")
+        if emeliyyat == "+":
+            print(a + b)
+        elif emeliyyat == "-":
+            print(a - b)
+        elif emeliyyat == "*":
+            print(a * b)
+        elif emeliyyat == "/":
+            print(a / b)
+        else:
+            print("Yanlish emeliyyat.")
+    except ValueError:
+        print("Reqem daxil edilmeyib.")
+    except ZeroDivisionError:
+        print("0-a bolme xetasi.")
+    except Exception as e:
+        print("Xeta:", e)
+    finally:
+        print("Hesablama bitdi")
+
+2)
+bolunenler = [i for i in range(1, 51) if i % 11 == 0]
+print(bolunenler)
+
+3)
+sozler = ["kitab", "qelem", "defter", "silgi"]
+ilk_herfler = [soz[0] for soz in sozler]
+print(ilk_herfler)
+
+4)
+seherler = ["Baki", "Gence", "Sumqayit"]
+kodlar = [12, 22, 18]
+seher_kodlari = dict(zip(seherler, kodlar))
+print(seher_kodlari)
+
+5)
+km_to_mil = lambda km: km * 0.621371
+print([km_to_mil(km) for km in [1, 5, 10, 20, 100]])
+
+6)
+qiymetler = [100, 200, 300, 400]
+vergi_qiymetleri = list(map(lambda x: x * 1.18, qiymetler))
+print(vergi_qiymetleri)
+
+7)
+a = [3, 7, 12]
+b = [2, 4, 6]
+ikiqat_cem = list(map(lambda x, y: (x*2) + (y*2), a, b))
+print(ikiqat_cem)
+
+8)
+from functools import reduce
+reqemler = [150, 80, 220, 45]
+minimum = reduce(lambda x, y: x if x < y else y, reqemler)
+print(minimum)
