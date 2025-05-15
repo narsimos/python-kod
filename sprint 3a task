@@ -1,0 +1,91 @@
+1)
+x = -5
+if x > 0:
+    print("musbet")
+elif x < 0:
+    print("menfi")
+else:
+    print("sifir")
+
+2)
+n = 7
+if n % 2 == 0:
+    print("cut")
+else:
+    print("tek")
+
+3)
+a, b, c = 5, 8, 2
+print(max(a, b, c))
+
+4)
+gun = 3
+gunler = {
+    1: "Bazar ertesi",
+    2: "Cersenbe axsami",
+    3: "Cersenbe",
+    4: "Cume axsami",
+    5: "Cume",
+    6: "Senbe",
+    7: "Bazar"
+}
+print(gunler.get(gun, "Yanlis gun"))
+
+5)
+temp = 15
+if temp < 0:
+    print("soyuq")
+elif 0 <= temp <= 20:
+    print("normal")
+else:
+    print("isti")
+
+6)
+password = "sifre1234"
+if len(password) < 8:
+    print("qisa")
+elif 8 <= len(password) <= 12:
+    print("orta")
+else:
+    print("uzun")
+
+7)
+x = 15
+if x % 3 == 0 and x % 5 == 0:
+    print("3 ve 5")
+elif x % 3 == 0:
+    print("3")
+elif x % 5 == 0:
+    print("5")
+else:
+    print("hec biri")
+
+8)
+for i in range(0, 21, 2):
+    print(i)
+
+9)
+metn = "Bagda erik var idi …"
+for herf in metn:
+    print(herf)
+
+10)
+for i in range(1, 11):
+    if i == 3:
+        continue
+    print(i)
+
+11)
+i = 1
+while True:
+    if i % 5 == 0:
+        print(i)
+        break
+    i += 1
+
+12)
+lst = (1, 3, 5, 7, 9)
+for index, value in enumerate(lst):
+    if value == 5:
+        print(index)
+        break
